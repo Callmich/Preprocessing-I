@@ -152,6 +152,12 @@ body nav a {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  body nav {
+    display: flex;
+    justify-content: center;
+  }
+}
 body .firstSec {
   display: flex;
   flex-direction: column;
@@ -196,6 +202,17 @@ body .secSec div li {
   padding: 2% 2%;
   border: l lightgray solid 1px;
 }
+@media (max-width: 500px) {
+  body .secSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .secSec div {
+    width: 80%;
+    margin: 5% 0%;
+  }
+}
 body .thirdSec {
   display: flex;
   flex-direction: column;
@@ -221,6 +238,11 @@ body .thirdSec .workHist .bord {
   padding: 5% 0;
   padding-left: 5%;
 }
+@media (max-width: 500px) {
+  body .thirdSec .workHist .bord {
+    font-size: 75%;
+  }
+}
 body .thirdSec .workHist .col1 {
   background-color: lightgray;
 }
@@ -239,9 +261,16 @@ body .contact h3 {
 body .contact p {
   margin: 0.1% 0%;
 }
+@media (max-width: 500px) {
+  body .contact {
+    align-items: center;
+    align-content: start;
+  }
+}
 body footer {
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 2% 0 3% 0;
   background-color: lightblue;
 }
