@@ -154,7 +154,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5% 0;
+  margin: 2% 0;
   padding: 5% 0;
   background-color: lightgray;
 }
@@ -180,11 +180,49 @@ nav a {
 }
 .secSec {
   display: flex;
-  margin: 5% 0;
+  margin: 2% 0;
+}
+.secSec h2 {
+  font-size: 150%;
+  margin-bottom: 2%;
+}
+.secSec div {
+  width: 50%;
+}
+.secSec div li {
+  padding: 2% 2%;
+  border: l lightgray solid 1px;
 }
 .thirdSec {
   display: flex;
+  flex-direction: column;
   margin: 5% 0;
+}
+.thirdSec h2 {
+  font-size: 150%;
+  border-bottom: 1px solid grey;
+  padding-bottom: 2%;
+}
+.thirdSec .workHist {
+  display: flex;
+  width: 100%;
+}
+.thirdSec .workHist h3 {
+  font-size: 125%;
+}
+.thirdSec .workHist .hist {
+  width: 25%;
+}
+.thirdSec .workHist .bord {
+  border-bottom: 1px solid grey;
+  padding: 5% 0;
+  padding-left: 5%;
+}
+.thirdSec .workHist .col1 {
+  background-color: lightgray;
+}
+.thirdSec .workHist .col2 {
+  background-color: lightblue;
 }
 .contact {
   display: flex;

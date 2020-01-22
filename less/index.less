@@ -60,6 +60,10 @@ html, body {
 
 // My Styling begins here
 
+@h2Font:150%;
+@workHistBord: 1px solid grey;
+@colorOne: lightgray;
+@colorTwo: lightblue;
 
 body {
 	display: flex;
@@ -85,9 +89,9 @@ nav{
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 5% 0;
+	margin: 2% 0;
 	padding: 5% 0;
-	background-color:lightgray;
+	background-color: @colorOne;
 
 
 	.pic{
@@ -119,12 +123,59 @@ nav{
 
 .secSec{
 	display: flex;
-	margin: 5% 0;
+	margin: 2% 0;
+
+	h2{
+		font-size: @h2Font;
+		margin-bottom: 2%;
+	}
+
+	div{
+		width:50%;
+
+		li{
+			padding: 2% 2%;
+			border: l@colorOne solid 1px;		}
+	}
 }
 
 .thirdSec{
 	display: flex;
+	flex-direction: column;
 	margin: 5% 0;
+
+	h2{
+		font-size: @h2Font;
+		border-bottom: @workHistBord;
+		padding-bottom: 2%;
+	}
+
+	.workHist{
+		display:flex;
+		width: 100%;
+
+		h3{
+			font-size: 125%
+		}
+
+		.hist{
+			width:25%;
+		}
+
+		.bord{
+			border-bottom: @workHistBord;
+			padding: 5% 0;
+			padding-left: 5%;
+		}
+
+		.col1{
+			background-color: @colorOne;
+		}
+
+		.col2{
+			background-color: @colorTwo;
+		}
+	}
 }
 
 .contact{
