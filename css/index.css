@@ -176,6 +176,7 @@ body .firstSec .title {
 body .firstSec .title h1 {
   font-size: 400%;
   margin-bottom: 1%;
+  font-family: 'Bangers', cursive;
 }
 body .firstSec .info {
   margin: 2% 4%;
@@ -194,6 +195,7 @@ body .secSec {
 body .secSec h2 {
   font-size: 150%;
   margin-bottom: 2%;
+  font-family: 'Bangers', cursive;
 }
 body .secSec div {
   width: 48%;
@@ -229,6 +231,7 @@ body .thirdSec .workHist {
 }
 body .thirdSec .workHist h3 {
   font-size: 125%;
+  font-family: 'Bangers', cursive;
 }
 body .thirdSec .workHist .hist {
   width: 25%;
@@ -257,6 +260,7 @@ body .contact {
 body .contact h3 {
   font-size: 125%;
   margin-bottom: 1%;
+  font-family: 'Bangers', cursive;
 }
 body .contact p {
   margin: 0.1% 0%;
