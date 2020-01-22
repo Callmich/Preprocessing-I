@@ -61,6 +61,7 @@ html, body {
 // My Styling begins here
 
 @h2Font:150%;
+@h3Font:125%;
 @workHistBord: 1px solid grey;
 @colorOne: lightgray;
 @colorTwo: lightblue;
@@ -69,7 +70,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	max-width: 100%;
-	margin: 4% 2%;
+
+	.marginSpace{
+		margin: 4% 2%;
+	}
 }
 
 nav{
@@ -142,7 +146,7 @@ nav{
 .thirdSec{
 	display: flex;
 	flex-direction: column;
-	margin: 5% 0;
+	margin: 2% 0;
 
 	h2{
 		font-size: @h2Font;
@@ -155,7 +159,7 @@ nav{
 		width: 100%;
 
 		h3{
-			font-size: 125%
+			font-size: @h3Font;
 		}
 
 		.hist{
@@ -180,11 +184,23 @@ nav{
 
 .contact{
 	display:flex;
-	margin: 5% 0;
+	flex-direction: column;
+	margin: 2% 0;
+
+	h3{
+		font-size:@h3Font;
+		margin-bottom: 1%;
+	}
+
+	p{
+		margin:.1% 0%;
+	}
 }
 
 footer{
 	display: flex;
 	justify-content: center;
+	padding: 2% 0;
+	background-color: @colorTwo;
 }
 

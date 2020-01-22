@@ -138,6 +138,8 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+}
+body .marginSpace {
   margin: 4% 2%;
 }
 nav {
@@ -196,7 +198,7 @@ nav a {
 .thirdSec {
   display: flex;
   flex-direction: column;
-  margin: 5% 0;
+  margin: 2% 0;
 }
 .thirdSec h2 {
   font-size: 150%;
@@ -226,9 +228,19 @@ nav a {
 }
 .contact {
   display: flex;
-  margin: 5% 0;
+  flex-direction: column;
+  margin: 2% 0;
+}
+.contact h3 {
+  font-size: 125%;
+  margin-bottom: 1%;
+}
+.contact p {
+  margin: 0.1% 0%;
 }
 footer {
   display: flex;
   justify-content: center;
+  padding: 2% 0;
+  background-color: lightblue;
 }
