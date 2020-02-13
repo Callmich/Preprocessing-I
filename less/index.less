@@ -54,6 +54,197 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+}
+
+
+// My Styling begins here
+
+//variables
+@h2Font:150%;
+@h3Font:125%;
+@bangers:'Bangers', cursive;
+@workHistBord: 1px solid grey;
+@colorOne: lightgray;
+@colorTwo: lightblue;
+
+// mix-ins
+.column(){
+	display:flex;
+	flex-direction: column;
+}
+
+.center(){
+	display:flex;
+	justify-content: center;
+}
+
+body {
+	.column();
+	max-width: 100%;
+
+	.marginSpace{
+		margin: 4% 2%;
+	}
+
+
+	nav{
+		display:flex;
+		justify-content: flex-end;
+		width:100%;
+
+		a{
+		padding: 0 2%;
+		text-decoration: none;
+		color: black;
+		}
+
+		@media( max-width: 500px){
+			.center();
+		}
+	}
+
+
+	.firstSec{
+		.column();
+		justify-content: center;
+		margin: 2% 0;
+		padding: 5% 0;
+		background-color: @colorOne;
+
+
+		.pic{
+			max-width:30%;
+			margin: 0 4%
+		}
+
+		.title{
+			margin: 2% 4%;
+
+			h1{
+				font-size: 400%;
+				margin-bottom: 1%;
+				font-family: @bangers;
+			}
+		}
+
+		.info{
+			margin: 2% 4%;
+			padding: 2% 0;
+			border-top: grey 1px solid;
+
+			button{
+				margin-top: 2%;
+				padding: 1% 2%;
+			}
+		}
+
+	}
+
+	.secSec{
+		display: flex;
+		justify-content: space-between;
+		margin: 2% 0;
+
+		h2{
+			font-size: @h2Font;
+			margin-bottom: 2%;
+			font-family: @bangers;
+		}
+
+		div{
+			width:48%;
+
+			li{
+				padding: 2% 2%;
+				border: l@colorOne solid 1px;		
+			}
+		}
+
+		@media( max-width: 500px){
+			.column();
+			align-items: center;
+
+			div{
+				width:80%;
+				margin: 5% 0%;
+			}
+		}
+
+	}
+
+	.thirdSec{
+		.column();
+		margin: 2% 0;
+
+		h2{
+			font-size: @h2Font;
+			border-bottom: @workHistBord;
+			padding-bottom: 2%;
+		}
+
+		.workHist{
+			display:flex;
+			width: 100%;
+
+			h3{
+				font-size: @h3Font;
+				font-family: @bangers;
+			}
+
+			.hist{
+				width:25%;
+			}
+
+			.bord{
+				border-bottom: @workHistBord;
+				padding: 5% 0;
+				padding-left: 5%;
+
+				@media(max-width: 500px){
+					font-size: 75%;
+				}
+			}
+
+			.col1{
+				background-color: @colorOne;
+			}
+
+			.col2{
+				background-color: @colorTwo;
+			}
+		}
+
+	
+	}
+
+	.contact{
+		.column();
+		margin: 2% 0;
+
+		h3{
+			font-size:@h3Font;
+			margin-bottom: 1%;
+			font-family: @bangers;
+		}
+
+		p{
+			margin:.1% 0%;
+		}
+
+		@media(max-width: 500px){
+			align-items: center;
+			align-content: start;
+		}
+
+	}
+
+	footer{
+		.center();
+		width:100%;
+		padding: 2% 0 3% 0;
+		background-color: @colorTwo;
+	}
+
 }
 
